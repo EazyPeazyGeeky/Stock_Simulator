@@ -53,6 +53,7 @@ for date, row in data.iterrows():
     if row["Stock Splits"] > 0:
         split_factor = row["Stock Splits"]
         cumulative_shares *= round(split_factor)
+        shares = cumulative_shares
         results.loc[len(results)] = {"Date": date, "Event": "Stock Split " +str(round(split_factor)), "Shares": shares,
                                      "Close Price": row["Close"], "Dividend Balance": dividend_balance,
                                      "Portfolio Value": shares * row["Close"], "Investment Status": total_investment}
