@@ -8,11 +8,9 @@ from datetime import datetime, timedelta
 # Function to format numbers to two decimal places
 def format_decimal(number):
     return "{:.2f}".format(number)
-
 # Default start date (today's date)
 end_date = datetime.now()
 start_date = end_date - timedelta(days=365)  # Set the default start date to one year ago
-
 # User inputs
 ticker = st.text_input("Enter the ticker symbol:", "AAPL")
 start_date_str = st.text_input("Enter the start date (YYYY-MM-DD):", start_date.strftime("%Y-%m-%d"))
