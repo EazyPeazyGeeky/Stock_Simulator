@@ -25,7 +25,7 @@ investment_amount = st.number_input("Enter the investment amount:", min_value=0,
 stock = yf.Ticker(ticker)
 data = stock.history(start=start_date_str, end=end_date_str)
 # Specify the timezone (e.g., 'UTC') for the datetime index
-data.index = data.index.tz_localize('UTC')
+#data.index = data.index.tz_localize('UTC')
 # Initialize variables
 shares = initial_shares
 dividend_balance = 0
