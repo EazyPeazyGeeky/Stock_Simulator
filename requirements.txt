@@ -4,4 +4,4 @@ pandas
 plotly
 numpy
 requests
-beautifulsoup
+bs4
