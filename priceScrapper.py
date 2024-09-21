@@ -30,7 +30,7 @@ def scrape_dba(search_query):
 
 
 # Search for products on DBA
-search_query = st.text_input("Search for items on DBA", "Kaffekværn")
+search_query = st.text_input("Search for items on DBA", "")
 if search_query:
     st.write(f"Search results for: {search_query}")
 
